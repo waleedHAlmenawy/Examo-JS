@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Waleed Almenawy",
+    "email": "waleed.almenawy@outlook.com",
+    "password": "12345678",
+    "isTested": false,
+    "exam": {
+      "questions": [],
+      "chosedAnswers": [],
+      "degree": 0
+    }
+  }, {
+    "name": "Abd Elaziz",
+    "email": "abd.elaziz@outlook.com",
+    "password": "12345678",
+    "isTested": false,
+    "exam": {
+      "questions": [],
+      "chosedAnswers": [],
+      "degree": 0
+    }
+  }
+]

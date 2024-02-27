@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/navBar&Footer.css">
+    <link rel="stylesheet" href="../styles/exam.css">
+
+    <title>Examo</title>
+</head>
+
+<body>
+    
+    <nav>
+        <img src="../assets/elements/examoLogo.svg" alt="logo" id="logo">
+    </nav>
+
+    <div class="container">
+        <section id="firstSection">
+            <section id="questionSection">
+                <i class="fa-solid fa-flag" id="mark"></i>
+                
+                <div class="border">
+                    <div id="qNumber"></div>
+
+                    <p id="question"></p>
+                </div>
+
+                <img src="../assets/elements/dec-1.svg" alt="decoration">
+            </section>
+
+            <ul id="answersSection">
+                <li id="A" onclick="choseAnswer(this)"><i class="fa-solid fa-circle"></i> <span></span></li>
+                <li id="B" onclick="choseAnswer(this)"><i class="fa-solid fa-circle"></i> <span></span></li>
+                <li id="C" onclick="choseAnswer(this)"><i class="fa-solid fa-circle"></i> <span></span></li>
+                <li id="D" onclick="choseAnswer(this)"><i class="fa-solid fa-circle"></i> <span></span></li>
+            </ul>
+        </section>
+
+        <section id="secondSection">
+            <div id="buttons">
+                <div id="leftArrow">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                
+                <div id="submit">
+                    Submit
+                </div>
+                
+                <div id="rightArrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <p id="timer">01 : 00</p>
+        </section>
+
+        <section id="thirdSection">
+            <div class="row">
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <span>©️ 2024 - Waleed Almenawy, Abd Elaziz</span>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d245c084da.js" crossorigin="anonymous"></script>
+
+    <script src="../scripts/exam/globalVariables.js"></script>
+    <script src="../scripts/exam/examFunctions.js"></script>
+    <script src="../scripts/exam/main.js"></script>
+
+</body>
+
+</html>

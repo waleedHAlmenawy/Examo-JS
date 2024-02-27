@@ -1,0 +1,29 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --firstColor: #A2FF86;
+    --secondColor: #164B60;
+    --thirdColor: #1B6B93;
+    --fourthColor: #4FC0D0;
+    --wrong: #FF0000;
+
+    --fontSm: 16px;
+    --fontMd: 24px;
+
+    --radius: 20px;
+    --radiusButtons: 50px;
+    --radiusUp: 100px 20px 20px 20px;
+    --radiusDown: 20px 20px 100px 20px;
+
+    --borderFirst: solid 1px var(--firstColor);
+    --borderSecond: solid 1px var(--secondColor);
+    --borderWrong: solid 1px var(--wrong);
+
+    --borderBigFirst: solid 5px var(--firstColor);
+    --borderBigSecond: solid 5px var(--secondColor);
+    --borderBigFourth: solid 5px var(--fourthColor);
+}

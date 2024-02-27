@@ -1,0 +1,152 @@
+.parent {
+    position: relative;
+    z-index: 1;
+    display: flex;
+
+    justify-content: center;
+
+
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+    background-image: url(../assets/imgs/blobs.png);
+    background-size: cover;
+
+    width: 400px;
+    height: 75vh;
+
+    background-color: white;
+    border-radius: var(--radius);
+
+    margin: 5%;
+    padding: 25px;
+
+    box-shadow: -5px 5px 4px rgba(162, 255, 134, 0.5);
+}
+
+#logo {
+    width: 126px;
+
+    color: red;
+
+    margin-bottom: 30px;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+
+    border-radius: var(--radius);
+    border: var(--borderSecond);
+
+    padding-left: 23px;
+    font-size: var(--fontSm);
+}
+
+input:focus, input:hover{
+    border: var(--borderFirst);
+    outline: none;
+}
+
+::placeholder {
+    color: var(--secondColor);
+    opacity: 1; /* Firefox */
+}
+
+#btn {
+    width: 200px;
+    height: 60px;
+
+    border-radius: var(--radiusButtons);
+    border: none;
+
+    font-size: var(--fontMd);
+    font-weight: bold;
+    color: white;
+
+    margin-top: 20px;
+
+    background-color: var(--firstColor);
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #68FF3B;
+    transition: all;
+    animation-duration: 1s;
+}
+
+#loginMsg {
+    position: relative;
+
+    font-size: var(--fontSm);
+    color: var(--secondColor);
+    align-self: center;
+    visibility: visible;
+    
+    margin-left: 0px;
+
+    bottom: -70px;
+}
+
+#loginBtn{
+    visibility: visible;
+    
+    color: var(--fourthColor);
+    cursor: pointer;
+}
+
+p {
+    visibility: hidden;
+
+    color: var(--wrong);
+
+    align-self: flex-start;
+
+    margin-left: 15%;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@media  screen and (max-height: 550px) {
+    .container {
+        height: 400px;
+    }
+}
+
+svg {
+    position: absolute;
+
+    top: 0;
+    z-index: 0;
+	width: 100%;
+	height: 100vh;
+
+    opacity: 0.1;
+}

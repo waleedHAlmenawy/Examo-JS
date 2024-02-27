@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(../assets/imgs/BG.png);
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+nav, footer{
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--fontSm);
+    color: white;
+
+    background-color: var(--firstColor);
+}
+
+nav img {
+    width: 70px;
+}
