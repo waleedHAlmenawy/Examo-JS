@@ -4,7 +4,7 @@ var questionNum = document.getElementById("qNumber");
 var markedSection = document.querySelector("#thirdSection .row");
 
 var timer = document.getElementById("timer");
-var distance = 1000 * 60 * 1;
+var distance = 1000 * 60 * 5;
 
 var answers = document.querySelectorAll("#answersSection li span");
 
@@ -25,28 +25,24 @@ var degree;
 var users = JSON.parse(localStorage.getItem("users"));
 var theUser = localStorage.getItem("current_user_email");
 
-for(var i = 0; i < users.length; i++)
-{
-    if(users[i].email == theUser)
-    {
+for (var i = 0; i < users.length; i++) {
+    if (users[i].email == theUser) {
         console.log(users);
 
         theUser = users[i];
         users.splice(i, 1);
-        
+
         break;
     }
 }
 
-function Question(q, ans, rAns)
-{
+function Question(q, ans, rAns) {
     this.question = q;
     this.answers = ans;
     this.rightAns = rAns; //
 }
 
-function Answer(ans)
-{
+function Answer(ans) {
     this.answer = ans;
 }
 
