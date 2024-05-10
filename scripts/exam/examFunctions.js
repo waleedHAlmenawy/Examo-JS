@@ -230,5 +230,5 @@ function sumbitQuestions() {
     users.push(theUser);
     localStorage.setItem("users", JSON.stringify(users));
 
-    window.location.replace("../../routes/result.html");
+    window.location.replace("../../result.html");
 }

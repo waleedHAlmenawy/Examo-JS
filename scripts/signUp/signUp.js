@@ -19,7 +19,7 @@ var users = localStorage.getItem("users") ? JSON.parse(localStorage.getItem("use
 
 btn.addEventListener("click", (e) => {
     var flag = true;
-    
+
     if (!rxgName.test(fristName.value)) {
         flag = false;
 
@@ -28,7 +28,7 @@ btn.addEventListener("click", (e) => {
     } else {
         msgs[0].style.visibility = "hidden";
     }
-    
+
     if (!rxgName.test(lastName.value)) {
         flag = false;
         msgs[1].textContent = "enter valid frist name";
@@ -36,7 +36,7 @@ btn.addEventListener("click", (e) => {
     } else {
         msgs[1].style.visibility = "hidden";
     }
-    
+
     if (!rxgEmail.test(email.value)) {
         flag = false;
         msgs[2].textContent = "enter valid email";
@@ -44,13 +44,11 @@ btn.addEventListener("click", (e) => {
     } else {
         msgs[2].style.visibility = "hidden";
     }
-    
-    for (var i = 0; i < users.length; i++)
-    {
-        if(users[i].email == email.value)
-        {
+
+    for (var i = 0; i < users.length; i++) {
+        if (users[i].email == email.value) {
             flag = false;
-            
+
             msgs[2].textContent = "this email already used";
             msgs[2].style.visibility = "visible";
         }
@@ -71,7 +69,7 @@ btn.addEventListener("click", (e) => {
             msgs[3].style.visibility = "hidden";
         }
     }
-    
+
     if (machPasword.value !== password.value) {
         flag = false;
         msgs[4].textContent = "must match the prevous password";
@@ -79,31 +77,30 @@ btn.addEventListener("click", (e) => {
     } else {
         msgs[4].style.visibility = "hidden";
     }
-    
-    if (flag)
-    {
+
+    if (flag) {
         const obj = {
             fristName: fristName.value,
             lastName: lastName.value,
             email: email.value,
             password: password.value,
             tokeTheExam: false,
-            exam:{
+            exam: {
                 questions: [],
                 choosedAnswers: []
             }
         };
-        
+
         users.push(obj);
         localStorage.setItem("users", JSON.stringify(users));
 
-        window.location.replace("/routes/signIn.html");
+        window.location.replace("./signIn.html");
     } else {
-        
+
         e.preventDefault();
     }
 });
 
 loginBtn.addEventListener("click", () => {
-    window.location.replace("/routes/signIn.html");
+    window.location.replace("./signIn.html");
 })

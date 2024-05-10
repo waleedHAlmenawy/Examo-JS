@@ -59,6 +59,6 @@ var startTimer = setInterval(function () {
     }
 
     if (distance < 0) {
-        window.location.replace("../../routes/timeOut.html");
+        window.location.replace("../../timeOut.html");
     }
 }, 1000);
