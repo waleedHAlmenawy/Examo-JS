@@ -43,9 +43,9 @@ btn.addEventListener("click", (e) => {
                 localStorage.setItem("current_user_email", email.value);
 
                 if (theUser.tokeTheExam) {
-                    window.location.href("../../result.html");
+                    window.location.replace("../../result.html");
                 } else {
-                    window.location.href("../../examination.html");
+                    window.location.replace("../../examination.html");
                 }
             }
         }
@@ -57,5 +57,5 @@ btn.addEventListener("click", (e) => {
 });
 
 signInBtn.addEventListener("click", () => {
-    window.location.href("../../index.html")
+    window.location.replace("../../index.html")
 })
