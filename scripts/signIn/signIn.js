@@ -17,11 +17,11 @@ btn.addEventListener("click", (e) => {
         megs[0].style.visibility = "hidden";
         megs[1].style.visibility = "hidden";
         if (!(re.test(email.value))) {
-            e.preventDefault();
+            // e.preventDefault();
             megs[0].textContent = "enter valid email format";
             megs[0].style.visibility = "visible";
         } else if (pass.value.length < 8) {
-            e.preventDefault();
+            // e.preventDefault();
             megs[0].style.visibility = "hidden";
             megs[1].textContent = "password must be 8 letters or more";
             megs[1].style.visibility = "visible";
@@ -34,7 +34,7 @@ btn.addEventListener("click", (e) => {
             }
 
             if (!theUser) {
-                e.preventDefault();
+                // e.preventDefault();
                 megs[1].style.visibility = "hidden";
                 megs[0].textContent = "invalid email or password";
                 megs[0].style.visibility = "visible";
@@ -50,7 +50,7 @@ btn.addEventListener("click", (e) => {
             }
         }
     } else {
-        e.preventDefault();
+        // e.preventDefault();
         megs[0].textContent = "fileds must not be empty";
         megs[0].style.visibility = "visible";
     }
